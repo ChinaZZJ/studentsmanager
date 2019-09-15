@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加学生</title>
+    <style>
+        form {
+            width: 300px;
+            height: 200px;
+            margin: 200px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/student/save" method="POST">
+        学生编号：<input type="number" name="id" id="id" /><br>
+        学生姓名：<input type="text" name="name" id="name" /><br>
+        学生年龄：<input type="number" name="age" id="age" /><br>
+        <input type="submit" value="添加学生信息" />
+    </form>
+</body>
+
+</html>

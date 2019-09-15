@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学生信息</title>
+    <style>
+        div{
+            width: 300px;
+            margin: 120px auto;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <a href="/student/add" style="margin-left:116px; width: 60px;border:2px solid #cccccc">添加学生</a>
+    <table border="2" width="300">
+        <caption>学生信息</caption>
+        <thead>
+            <tr>
+                <td>学号</td>
+                <td style="width: 60px">姓名</td>
+                <td>年龄</td>
+                <td style="width: 60px">操作</td>
+            </tr>
+        </thead>
+        <tbody>
+            <%
+                        if(students.length > 0){
+                        for(var index in students){
+             %>
+            <tr>
+                <td><%=students[index].id%></td>
+                <td><%=students[index].name %></td>
+                <td><%=students[index].age %></td>
+                <td>
+                    <a href="/student/edit/<%=students[index].id%>">修改</a>
+                    <a href="/student/delete/<%=students[index].id%>">删除</a>
+                </td>
+            </tr>
+            <% 
+                }
+            }else{	
+            %>
+            <tr>
+                <td colspan="3" style="color: red">当前学生信息的为空</td>
+            </tr>
+            <% 
+            } %>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

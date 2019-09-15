@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>reset</title>
+    <style>
+        form{
+            width: 400px;
+            margin: 200px auto;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/resetPassword/resetSuccess" method="get">
+        学&nbsp;&nbsp;&nbsp;号：<input type="text" name="username" value=""  placeholder="请输入学号"><br>
+        原密码：<input type="password" name="oldpassword" id="oldpassword" value=""  placeholder="请输入原密码"><br>
+        新密码：<input type="password" name="newpassword" id="newpassword" value="" placeholder="请输入新密码"><br>
+        <input type="submit" value="确定">
+    </form>
+</body>
+
+</html>

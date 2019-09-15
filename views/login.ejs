@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChinaZZJ的图书管理系统</title>
+    <link rel="stylesheet" href="public/css/login.css">
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="top-logo">
+                <img src="public/img/logo.jpg" alt="图片加载失败">
+                <h3>简易学生管理系统(私人版)</h3>
+                <div class="add"></div>
+            </div>
+            <nav class="top-nav">
+                <ul>
+                    <li>
+                        <a href="">首页</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">联系我</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">帮助</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <form action="/check">
+                <h2>登录</h2>
+                <div class="input">
+                    <input type="text" name="username" id="username" value="" placeholder="手机号/邮箱/身份证">
+                </div>
+                <div class="input">
+                    <input type="password" name="password" id="password" value="" placeholder="默认密码为123456">
+                </div>
+                <div class="input">
+                    <input type="submit" value="登录">
+                </div>
+                <a href="/resetPassword" class="reset">忘记密码？</a>
+                <div>
+                    <a href="/register" class="register">注册</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            designing by Chinazzj 2018-2019 <a href="http://www.cqupt.edu.cn/cqupt/index.shtml">cqupt</a> student
+        </div>
+    </footer>
+</body>
+
+</html>
